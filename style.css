@@ -52,7 +52,7 @@ header {
     border-radius: 2rem;
     border: none;
     background-color: #fff;
-    box-shadow: rgba(253, 251, 255, 0.1) 1px 2px 4px;
+    box-shadow: rgba(253, 251, 255, 0.1) 1px 2px 8px;
     outline: 0;
 }
 
@@ -87,7 +87,7 @@ header {
     padding: 5px;
 }
 
-.hero-text button {
+.pink-button {
     margin-top: 1rem;
     padding: 0.6rem 3.5rem;
     font-family: inherit;
@@ -107,5 +107,42 @@ header {
 .hero-svg img {
     max-width: 100%;
     height: auto;
+}
+
+.section-card {
+    width: 90vw;
+    margin: 1.5rem auto;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+    border-radius: 10px;
+}
+
+.card-svg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-info {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.card-info > h2 {
+    font-family: var(--Poppins);
+    font-size: 1.3rem;
+}
+
+.card-info > p {
+    margin-top: 0.8rem;
+    padding: 5px;
+    font-family: var(--Open-sans);
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
