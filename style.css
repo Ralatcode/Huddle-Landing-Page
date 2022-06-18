@@ -69,7 +69,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--Very-Pale-Cyan);
-    min-height: 650px;
+    min-height: 750px;
 }
 
 .hero-text {
@@ -92,7 +92,6 @@ header {
     padding: 0.6rem 3.5rem;
     font-family: inherit;
     font-weight: inherit;
-    font-size: 0.9rem;
     color: var(--Very-Pale-Cyan);
     background-color: var(--Pink);
     min-width: 40px;
@@ -137,6 +136,7 @@ header {
 .card-info > h2 {
     font-family: var(--Poppins);
     font-size: 1.3rem;
+    letter-spacing: 1px;
 }
 
 .card-info > p {
@@ -151,6 +151,7 @@ header {
 .call-to-action {
     width: 90vw;
     margin: 1.5rem auto;
+    margin-bottom: 0;
     padding: 2rem 1.3rem;
     display: flex;
     text-align: center;
@@ -158,11 +159,98 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
-    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 .call-to-action h2 {
-    font-family: var(--Poppins);
-    font-size: 1rem;
+    font-family: var(--Open-sans);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     margin-bottom: 0.5rem;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: var(--Open-sans);
+    background-color: var(--Very-Dark-Cyan);
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    margin-top: -6rem;
+    z-index: -99;
+}
+
+.footer-logo {
+    margin-left: 1.3rem;
+    padding: 1rem 0;
+}
+
+.footer-logo > svg {
+    max-width: 150px;
+}
+
+.svg-path {
+    fill: #fff;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.3rem;
+}
+
+.icon-container {
+    min-width: 48px;
+}
+
+.icon-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-info > p {
+    padding: 10px;
+}
+
+.footer-link-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+}
+
+.footer-links {
+    margin-top: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.fa-brands {
+    border: 2px groove #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: var(--Poppins);
+    padding: 1.5rem 0;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 750px) {
+
 }
