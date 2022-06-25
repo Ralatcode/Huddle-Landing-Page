@@ -301,6 +301,50 @@ footer {
         padding-right: 1rem;
     }
 
+    .pink-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: unset;
+        width: 270px;
+        height: 45px;
+        position: relative;
+        border: none;
+        transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        cursor: pointer;
+    }
+
+    .pink-button::after,
+    .pink-button::before {
+        content: "";
+        position: absolute;
+        display: block;
+        transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 10%;
+        height: 10%;
+    }
+
+    .pink-button:hover {
+        background-color: transparent;
+        color: var(--Pink);
+    }
+
+    .pink-button:hover::before {
+        content: "";
+        border-bottom: 2px solid var(--Pink);
+        border-top: 2px solid var(--Pink);
+        width: 120%;
+        height: 100%;
+    }
+
+    .pink-button:hover::after {
+        content: "";
+        border-left: 2px solid var(--Pink);
+        border-right: 2px solid var(--Pink);
+        height: 150%;
+        width: 100%;
+    }
+
     .hero-text h1 {
         max-width: 345px;
     }
@@ -311,12 +355,25 @@ footer {
         margin-top: unset;
     }
 
+    .hero-svg:hover {
+        transform: translateY(-7px);
+        transition: all 0.3s ease-in;
+    }
+
     .section-card {
         width: 80vw;
         min-height: unset;
         flex-direction: row-reverse;
         justify-content: space-around;
         padding: 2rem;
+        transition: all 0.25s ease-in;
+        border-bottom: 10px solid transparent;
+    }
+
+    .section-card:hover {
+        transform: translateY(-5px);
+        border: none;
+        border-bottom: 10px solid var(--Pink);
     }
 
     .flip {
@@ -338,7 +395,16 @@ footer {
         margin-top: 7rem;
         width: 70vw;
         max-width: 600px;
+        transition: all 0.25s ease-in;
+        border: 5px solid transparent;
     }
+
+    .call-to-action:hover {
+        transform: translateY(-5px);
+        border: none;
+        border: 5px solid var(--Pink);
+    }
+
 
     footer {
         justify-content: unset;
@@ -367,6 +433,12 @@ footer {
     .footer-col4 {
         grid-area: col4;
         margin-top: 0;
+    }
+
+    #icon:hover {
+        color: var(--Very-Dark-Cyan);
+        background-color: #fff;
+        border: none;
     }
 
     .footer-col5 {
